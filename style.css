@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background: #f0f2f5;
+}
+
+.container-all{
+    width: 100%;
+    margin-left: 280px;
+    position: relative;
+}
+
+/*===============ASIDE===============*/
+.sidebar{
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px #00000f;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    z-index: 999;
+}
+
+.sidebar h2{
+    font-family: 'Merienda One', sans-serif;
+    font-size: 2em;
+    color: #FF0000;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+.title-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-card img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    filter: invert(44%) sepia(24%) saturate(572%) hue-rotate(164deg) brightness(97%) contrast(83%);
+}
+
+.title-card p{
+    font-size: 14px;
+
+}
+
+.menu-sidebar{
+    list-style: none;
+}
+
+.menu-sidebar li{
+    width: 100%;
+}
+
+.menu-sidebar li a:hover{
+    color: #ffffff;
+    background: #ff0000;
+}
+
+.menu-sidebar li a:hover .title-card img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(150deg) brightness(114%) contrast(100%);
+}
+
+.selected{
+    color: #ffffff !important;
+    background: #ff0000 !important;
+}
+
+.menu-sidebar li a{
+    padding: 15px 20px;
+    width: 100%;
+    height: 100%;
+    color: #5a788f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subli{
+    padding-left: 40px !important;
+}
+
+
+/*===============*/
+
+
+/*===============HEADER===============*/
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 35px;
+    background-color: #eb423d;
+    color: #ffffff;
+    
+}
+
+/*====MENU====*/
+
+.header-profile{
+    display: flex;
+    justify-content: space;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    color: #ffffff;
+}
+
+.img-profile{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #f28b86;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.name-profile{
+    margin: 0 10px;
+}
+/*===============*/
+
+/*===============URL VISITADA===============*/
+.container{
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.access-menu ul{
+    display: flex;
+}
+
+.access-menu ul li{
+    display: flex;
+    list-style: none;
+}
+
+.access-menu ul li a{
+    margin: 0 5px;
+    list-style: none;
+    color: #3b3a3a;
+}
+
+.access-selected{
+    text-decoration: none;
+    color: #58768d !important;
+}
+
+/*===============*/
+
+.h1-form{
+    font-weight: 700;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+/*===============FORM===============*/
+
+.form{
+    margin-top: 15px;
+    padding: 15px 40px;
+    background: #ffffff;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    min-width: 500px;
+}
+
+.obrigatorio{
+    color: #FF0000;
+}
+
+input[type = text],
+select{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #929292;
+    outline: none;
+    border-radius: 4px;
+}
+
+input[type = number]{
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #929292;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+input:focus,
+select:focus{
+    border: 1px solid #ff0000;
+}
+
+.divs-form{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    min-width: 400px;
+
+}
+
+.div-data{
+    position: relative;
+    width: 50%;
+}
+
+.calendar-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #808080;
+}
+
+.label-div{
+    margin: 5px 0;
+}
+
+.radio-div{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+input[type = radio]{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.radios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radios label::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: yellow;
+}
+
+.ativa-loja{
+    margin-bottom: 45px;
+}
+
+fieldset legend{
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.end-num{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.end-loja{
+    width: 75%;
+}
+
+.num-loja{
+    width: 120px;
+}
+
+#input-num{
+    width: 100%;
+}
+
+.est-cid{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.estado{
+    width: 100px;
+}
+
+.cidade{
+    width: 80%;
+}
+
+/*====DIA PARA ATENDIMENTO====*/
+
+
+.horario-abre-fecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+    max-width: 405px;
+    min-width: 270px;
+}
+
+.fechado{
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.check-dia{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+}
+
+.check-input-d{
+    margin-right: 5px;
+}
+
+.abre,
+.fecha{
+    width: 45% !important;
+}
+
+.dia-label{
+    min-width: 130px;
+}
+
+.btns-form{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cancela{
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: underline;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.cancela:hover{
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.envia-form{
+    margin-left: 20px;
+    color: #ffffff;
+    padding: 10px 15px;
+    background: #ff0000;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.envia-form:hover{
+    color: #ff0000;
+    background: #ffffff;
+    padding: 9px 14px;
+    border: 1px solid #ff0000;
+}
+
+/*===============*/
+
+
+/*========================MEDIA QUERIES=============================*/
+
+@media(max-width: 605px){
+    .horario-abre-fecha{
+        margin-left: 5px;
+    }
+
+    .fechado{
+        margin-left: 5px;
+    }
+}
